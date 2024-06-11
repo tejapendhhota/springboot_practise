@@ -1,0 +1,5 @@
+package com.example.currency_exchange_service.currency_exchange_service;
+
+public interface ExchangeValueRepository extends JPARepository<ExchangeValue, Long> {
+
+}

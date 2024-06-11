@@ -1,0 +1,3 @@
+insert into exchange_value values ('qweqe','USD', 'INR',65);
+insert into exchange_value values ('qweqe2','EUR', 'INR',75);
+insert into exchange_value values ('qweqe3','CAN', 'INR',85);

@@ -1,0 +1,2115 @@
+!SESSION 2024-06-07 08:51:49.377 -----------------------------------------------
+eclipse.buildId=4.21.1.202402070844
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file E:\workspace\.metadata\.bak_6.log
+Created Time: 2024-06-07 10:21:41.531
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:21:41.531
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@6b40736b
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:41.532
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735901507
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:41.532
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:41.532
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:41.532
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 2416
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:41.536
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9336
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:21:45.236
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@91ec2df
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:45.237
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735905236
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:45.237
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:45.238
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:45.238
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 9336
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:45.246
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5696
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:21:47.587
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@4a52861f
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:47.588
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735907588
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:47.588
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:47.588
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:47.589
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 5696
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:47.594
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11968
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:21:49.735
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@65aaae0a
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:49.735
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735909735
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:49.736
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:49.736
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:49.737
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11968
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:49.744
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10800
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:21:51.656
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.ui.texteditor.TextOperationAction.lambda$0(TextOperationAction.java:130)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:121)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:580)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:655)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:439)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1286)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1065)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1840)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5153)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4776)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:21:51.658
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@349024fe
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:51.658
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735911658
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:51.658
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:51.659
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:51.659
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 10800
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:51.664
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10612
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:21:55.917
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@493c84f0
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:55.918
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735915918
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:55.918
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:55.919
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:55.919
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 10612
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:55.924
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11936
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:21:55.984
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.lambda$8(LSPCodeActionQuickAssistProcessor.java:191)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:21:57.969
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@6774a9c5
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:57.969
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735917969
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:57.969
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:21:57.970
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:57.970
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11936
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:21:57.973
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5880
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:21:58.022
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.lambda$8(LSPCodeActionQuickAssistProcessor.java:191)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:22:02.611
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@53560fbc
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:22:02.612
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717735922611
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:22:02.613
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:22:02.613
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:22:02.613
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 5880
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:22:02.620
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10792
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:22:03.612
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:25:40.092
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@53474170
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:40.092
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736140092
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:40.093
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:40.093
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:40.093
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 10792
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:40.100
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11564
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:25:41.093
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:25:43.077
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@6799d66a
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:43.078
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736143077
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:43.079
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:43.079
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:43.080
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11564
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:43.086
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11960
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:25:45.272
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@da421dc
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:45.273
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736145272
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:45.274
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:45.274
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:45.275
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11960
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:45.279
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7796
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:25:45.853
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:25:49.729
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@1aa01c8b
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:49.729
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736149729
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:49.729
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:49.729
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:49.730
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 7796
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:49.734
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9044
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:25:51.868
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@55a387d6
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:51.869
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736151868
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:51.869
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:51.869
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:51.870
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 9044
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:51.874
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11824
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:25:56.497
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@2fddf8a3
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:56.497
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736156497
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:56.498
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:25:56.498
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:56.498
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11824
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:25:56.502
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5132
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:00.529
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@578f1555
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:00.530
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736160529
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:00.530
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:00.531
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:00.531
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 5132
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:00.538
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 3580
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:03.774
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@2a55a988
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:03.774
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736163774
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:03.774
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:03.775
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:03.775
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 3580
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:03.778
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8328
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:26:03.824
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.ui.texteditor.TextOperationAction.lambda$0(TextOperationAction.java:130)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:121)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:580)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:655)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:439)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1286)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1065)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1840)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5153)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4776)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:11.960
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@73444aca
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:11.960
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736171960
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:11.960
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:11.961
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:11.961
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 8328
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:11.965
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5632
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:26:12.031
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.lambda$8(LSPCodeActionQuickAssistProcessor.java:191)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:16.549
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@484ad6c4
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:16.550
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736176550
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:16.550
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:16.551
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:16.551
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 5632
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:16.556
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6584
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:26:16.601
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.ui.texteditor.TextOperationAction.lambda$0(TextOperationAction.java:130)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:121)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:580)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:655)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:439)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1286)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1065)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmKeyDown(Widget.java:1840)
+	at org.eclipse.swt.widgets.Control.WM_KEYDOWN(Control.java:5153)
+	at org.eclipse.swt.widgets.Canvas.WM_KEYDOWN(Canvas.java:406)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4776)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:26:16.997
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleRepeatedInvocation(CompletionProposalPopup.java:559)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:524)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.lambda$8(LSPCodeActionQuickAssistProcessor.java:191)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:18.784
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@4733528
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:18.784
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736178784
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:18.784
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:18.785
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:18.785
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 6584
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:18.790
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 2540
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:26:18.849
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.lambda$8(LSPCodeActionQuickAssistProcessor.java:191)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:23.349
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@46f101b
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:23.349
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736183349
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:23.350
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:23.350
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:23.350
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 2540
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:23.354
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11300
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:26:23.413
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServers.matches(LanguageServers.java:226)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1856)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerDocumentExecutor.anyMatching(LanguageServers.java:303)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.computeQuickAssistProposals(LSPCodeActionQuickAssistProcessor.java:114)
+	at org.eclipse.lsp4e.jdt.LspJavaQuickAssistProcessor.getAssists(LspJavaQuickAssistProcessor.java:62)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeAssistCollector.safeRun(JavaCorrectionProcessor.java:409)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:342)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectAssists(JavaCorrectionProcessor.java:511)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:292)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.computeQuickAssistProposals(JavaCorrectionProcessor.java:248)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant$ContentAssistProcessor.computeCompletionProposals(QuickAssistAssistant.java:71)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2064)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2063)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2060)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1874)
+	at org.eclipse.jface.text.quickassist.QuickAssistAssistant.showPossibleQuickAssists(QuickAssistAssistant.java:113)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionAssistant.showPossibleQuickAssists(JavaCorrectionAssistant.java:194)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:201)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionQuickAssistProcessor.lambda$8(LSPCodeActionQuickAssistProcessor.java:191)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:27.197
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@39e5e6b4
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:27.197
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736187197
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:27.197
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:27.197
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:27.198
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11300
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:27.202
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11712
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-06-07 10:26:27.382
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 10:26:31.492
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@4f6dadae
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy19/jdk.proxy19.$Proxy55.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:31.493
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143\jre\bin\javaw.exe
+-cp
+E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes;E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:E:\spring-tool-suite-4-4.21.1\sts-4.21.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.52.0.202401312010\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/workspace/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1717736191492
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:31.493
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-07 10:26:31.494
+!MESSAGE DelegatingStreamConnectionProvider - Stopping Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:31.494
+!MESSAGE Stopped org.springframework.tooling.boot.ls LS process 11712
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-07 10:26:31.500
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6760
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-06-07 12:56:58.958
+!MESSAGE ExecutionException occurred during shutdown of EndpointProxy for org.eclipse.lsp4j.jsonrpc.RemoteEndpoint@28947faa
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:493)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy23/jdk.proxy23.$Proxy76.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:491)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more

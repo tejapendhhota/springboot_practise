@@ -1,0 +1,5 @@
+package com.restwebservice.example.restwebservice.user;
+
+public class UserController {
+
+}

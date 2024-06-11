@@ -1,0 +1,34 @@
+package com.restwebservice.example.restwebservice.user;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	
+	private UsrDaoService service;
+	
+	public UserController(UsrDaoService service) {
+		this.service = service;
+	}
+	
+	@GetMapping(path = "/Users")
+	public List<User> retrieveUsers(){
+		return service.findAll();
+	}
+
+	@GetMapping(path = "/Users/{id}")
+	public User retrieveUsers(@PathVariable Integer id ){
+		return service.findUser(id);
+	}
+
+	@PostMapping(path = "/users")
+	public void createUser(@RequestBody User user) {
+		
+	}
+}

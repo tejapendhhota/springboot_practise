@@ -1,0 +1,25 @@
+package com.restwebservice.example.restwebservice.user;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	
+	private UsrDaoService service;
+	
+	public UserController(UsrDaoService service) {
+		this.service = service;
+	}
+	
+	
+	
+	@GetMapping(path = "/Users")
+	public List<User> retrieveUsers(){
+		return service.findAll();
+		
+	}
+
+}
